@@ -6,7 +6,7 @@ spec:
   servers: 1
   agents: 3
   token: letmein
-  version: v1.27.15+k3s1
+  version: v1.27.15-k3s1
   clusterCIDR: 10.30.0.0/16
   serviceCIDR: 10.31.0.0/16
   clusterDNS: 10.30.0.10
