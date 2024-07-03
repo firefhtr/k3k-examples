@@ -1,0 +1,18 @@
+apiVersion: k3k.io/v1alpha1
+kind: Cluster
+metadata:
+  name: multi-example
+spec:
+  servers: 1
+  agents: 3
+  token: letmein
+  version: v1.27.15+k3s1
+  clusterCIDR: 10.30.0.0/16
+  serviceCIDR: 10.31.0.0/16
+  clusterDNS: 10.30.0.10
+  serverArgs:
+  - "--write-kubeconfig-mode=777"
+  expose:
+    ingress:
+      enabled: true
+      ingressClassName: "nginx"
